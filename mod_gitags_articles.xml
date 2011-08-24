@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="1.7" client="site" method="upgrade">
+	<name>mod_gitags_articles</name>
+	<author>Andy Soell</author>
+	<creationDate>August 24, 2011</creationDate>
+	<copyright>Copyright 2011 The Genteel</copyright>
+	<authorEmail>andy@teamsoell.com</authorEmail>
+	<authorUrl>andy.teamsoell.com</authorUrl>
+	<version>1.0</version>
+	<description>List GiTagged articles</description>
+	<files>
+		<filename module="mod_footer">mod_gitags_articles.php</filename>
+		<folder>tmpl</folder>
+		<filename>index.html</filename>		
+		<filename>mod_gitags_articles.xml</filename>
+	</files>
+	<config>
+		<fields name="params">
+			<fieldset name="advanced">
+				<field
+					name="title"
+					type="text"
+					label="Title"
+					description="Title for module display" />			
+				<field
+					name="tag"
+					type="text"
+					label="Tag"
+					description="Tag to search for articles" />
+				<field
+					name="count"
+					type="text"
+					label="Number to display"
+					description="Maximum number of articles to display" />					
+			</fieldset>
+		</fields>
+	</config>
+</extension>
